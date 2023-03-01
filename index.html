@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge-01</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="image/icon.png" />
+    <link href="bootstrap5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap5/js/bootstrap.bundle.min.js" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"></a>
+            <button class="btn btn-success d-md-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#our-services">Our Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#why-us">Why Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonial">Testimonial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#faq">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-success" href="#">Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-section pt-md-5">
+        <div class="bg-car"></div>
+        <div class="container h-100 d-flex pt-md-5">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-md-6 tagline py-5">
+                    <h2>sewa &amp; rental mobil terbaik dikawasan lokasimu</h2>
+                    <p>Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga
+                        terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.
+                    </p>
+                    <a href="#" class="btn btn-success">Mulai Sewa Mobil</a>
+                </div>
+                <div class="col-md-6 img-car py-5">
+                    <img src="./image/mobil.png" alt="" class="w-100">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+
+    <script>
+        gsap.from('.main-section img', { duration: 3, x: 100, opacity: 0 });
+        gsap.from('.main-section span', { duration: 3, y: 100, opacity: 0 });
+        gsap.from('.main-section .tagline', { duration: 3, x: -100, opacity: 0 });
+    </script>
+
+  
+
+
+</body>
+</html>
